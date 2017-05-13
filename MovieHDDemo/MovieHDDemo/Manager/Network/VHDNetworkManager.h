@@ -27,5 +27,12 @@ typedef void(^VHDResponseBlock)(VHDResponseObject* responseObject);
                password:(NSString *)password
              completion:(VHDResponseBlock)completion;
 
+- (void) getListCategoriesWithCompletion:(VHDResponseBlock) completion;
 - (void) getDataForHomeWithCompletion:(VHDResponseBlock) completion;
+- (void) getDetailForMovie:(NSString *)movieID ep:(NSString *)ep completion:(VHDResponseBlock) completion;
+- (void) getLinkPlayForMovie:(NSString *)movieID ep:(NSString *)ep completion:(VHDResponseBlock) completion;
+- (void) getListMovieForCategory:(NSString *)categoryID offset:(NSString *)offset completion:(VHDResponseBlock) completion;
+
+- (void) searchWithKey:(NSString *)key completion:(VHDResponseBlock) completion;
+
 @end

@@ -13,10 +13,13 @@
 #import "VHDMovieCell.h"
 #import "VHDHeaderView.h"
 
+#import "VHDMovieDetailVC.h"
+
 @interface VHDHomeVC () <KIImagePagerDelegate, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 @property (weak, nonatomic) IBOutlet KIImagePager *bannerSlider;
 @property (weak, nonatomic) IBOutlet UILabel *movieName;
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+@property (weak, nonatomic) IBOutlet UIButton *btnSearch;
 
 @property (nonatomic, strong) VHDMovieModel *currentBannerModel;
 
@@ -46,6 +49,9 @@ static NSString *movieCellID = @"movieCell";
         [self dismissLoading];
     }];
     
+    [[self.btnSearch rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
+        DLog(@"Search...");
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -54,6 +60,10 @@ static NSString *movieCellID = @"movieCell";
 }
 
 - (void) initData{
+    
+    _collectionView.layer.cornerRadius = 5.0;
+    _collectionView.clipsToBounds = YES;
+    
     [_collectionView registerNib:[UINib nibWithNibName:@"VHDMovieCell" bundle:nil] forCellWithReuseIdentifier:movieCellID];
     [_collectionView registerNib:[UINib nibWithNibName:@"VHDHeaderView" bundle:nil] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"HeaderView"];
 }
@@ -61,6 +71,7 @@ static NSString *movieCellID = @"movieCell";
 - (RACSignal *) getDataForHome{
     return [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
         [self.networkManager getDataForHomeWithCompletion:^(VHDResponseObject *responseObject) {
+            DLog(@"Get data at home: %@", responseObject.responseData);
             if (!responseObject.responseCode.boolValue) {
                 [subscriber sendNext:(NSDictionary *)responseObject.responseData];
             }else{
@@ -127,6 +138,13 @@ static NSString *movieCellID = @"movieCell";
     return cell;
 }
 
+- (void) collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    [collectionView deselectItemAtIndexPath:indexPath animated:YES];
+    VHDMovieByCateModel *cateModel = [self->_listMovieByCategory objectAtIndex:indexPath.section];
+    VHDMovieModel *movie = [cateModel.listMovie objectAtIndex:indexPath.row];
+    [self gotoDetailOfMovie:movie];
+}
+
 - (CGSize) collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
     CGFloat margin = 10;
     CGFloat itemWidth = (collectionView.frame.size.width - margin * 4)/3;
@@ -142,7 +160,7 @@ static NSString *movieCellID = @"movieCell";
         VHDHeaderView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"HeaderView" forIndexPath:indexPath];
         VHDMovieByCateModel *cateModel = [self->_listMovieByCategory objectAtIndex:indexPath.section];
         headerView.lbTitle.text = cateModel.CategoryName;
-        [[headerView.btnMore rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
+        [[[headerView.btnMore rac_signalForControlEvents:UIControlEventTouchUpInside] takeUntil:headerView.rac_prepareForReuseSignal ] subscribeNext:^(__kindof UIControl * _Nullable x) {
             DLog(@"Touch load more video");
         }];
         reusableview = headerView;
@@ -175,7 +193,7 @@ static NSString *movieCellID = @"movieCell";
 }
 
 - (void) imagePager:(KIImagePager *)imagePager didSelectImageAtIndex:(NSUInteger)index{
-    
+    [self gotoDetailOfMovie:_currentBannerModel];
 }
 
 - (void)imagePager:(KIImagePager *)imagePager didScrollToIndex:(NSUInteger)index{
@@ -188,5 +206,11 @@ static NSString *movieCellID = @"movieCell";
     return UIViewContentModeScaleAspectFill;
 }
 
+#pragma mark Util
+- (void) gotoDetailOfMovie:(VHDMovieModel *)movie{
+    VHDMovieDetailVC *detailVC = [self.storyboard instantiateViewControllerWithIdentifier:@"VHDMovieDetailVC"];
+    detailVC.movieM = movie;
+    [self.navigationController pushViewController:detailVC animated:YES];
+}
 
 @end

@@ -8,6 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		7820261078666AE2FC0C675B /* libPods-MovieHDDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D786EE2E51F02AEFE32A06C3 /* libPods-MovieHDDemo.a */; };
+		DE39823D1EC6F60800581216 /* VHDMovieDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DE39823C1EC6F60800581216 /* VHDMovieDetailVC.m */; };
+		DE3982491EC7048100581216 /* JDPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3982401EC7048100581216 /* JDPlayer.m */; };
+		DE39824A1EC7048100581216 /* JDPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3982421EC7048100581216 /* JDPlayerView.m */; };
+		DE39824B1EC7048100581216 /* JDScrubber.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3982441EC7048100581216 /* JDScrubber.m */; };
+		DE39824C1EC7048100581216 /* JDVideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3982461EC7048100581216 /* JDVideoModel.m */; };
+		DE39824D1EC7048100581216 /* JDVideoPlayLayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3982481EC7048100581216 /* JDVideoPlayLayerView.m */; };
+		DE3982681EC7058100581216 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3982501EC7058100581216 /* MASCompositeConstraint.m */; };
+		DE3982691EC7058100581216 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3982531EC7058100581216 /* MASConstraint.m */; };
+		DE39826A1EC7058100581216 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3982551EC7058100581216 /* MASConstraintMaker.m */; };
+		DE39826B1EC7058100581216 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3982571EC7058100581216 /* MASLayoutConstraint.m */; };
+		DE39826C1EC7058100581216 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = DE39825B1EC7058100581216 /* MASViewAttribute.m */; };
+		DE39826D1EC7058100581216 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = DE39825D1EC7058100581216 /* MASViewConstraint.m */; };
+		DE39826E1EC7058100581216 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DE39825F1EC7058100581216 /* NSArray+MASAdditions.m */; };
+		DE39826F1EC7058100581216 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3982621EC7058100581216 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		DE3982701EC7058100581216 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3982641EC7058100581216 /* View+MASAdditions.m */; };
+		DE3982711EC7058100581216 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3982671EC7058100581216 /* ViewController+MASAdditions.m */; };
+		DE3982751EC7060A00581216 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3982741EC7060A00581216 /* Reachability.m */; };
+		DE3982781EC7070C00581216 /* VHDPlayMovieVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3982771EC7070C00581216 /* VHDPlayMovieVC.m */; };
 		DECD24BC1EC3FF68007F59E7 /* NSObject+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = DECD24741EC3FF68007F59E7 /* NSObject+Extension.m */; };
 		DECD24BD1EC3FF68007F59E7 /* UILabel+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = DECD24781EC3FF68007F59E7 /* UILabel+Additions.m */; };
 		DECD24BE1EC3FF68007F59E7 /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = DECD247B1EC3FF68007F59E7 /* UIView+Additions.m */; };
@@ -61,6 +79,47 @@
 		6A32EFE04F637C4E041A97D9 /* Pods-MovieHDDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieHDDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MovieHDDemo/Pods-MovieHDDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		6C9B6FDAF0737D4BF6A73E72 /* Pods-MovieHDDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieHDDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MovieHDDemo/Pods-MovieHDDemo.release.xcconfig"; sourceTree = "<group>"; };
 		D786EE2E51F02AEFE32A06C3 /* libPods-MovieHDDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MovieHDDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE39823B1EC6F60800581216 /* VHDMovieDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VHDMovieDetailVC.h; sourceTree = "<group>"; };
+		DE39823C1EC6F60800581216 /* VHDMovieDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VHDMovieDetailVC.m; sourceTree = "<group>"; };
+		DE39823F1EC7048100581216 /* JDPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDPlayer.h; sourceTree = "<group>"; };
+		DE3982401EC7048100581216 /* JDPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDPlayer.m; sourceTree = "<group>"; };
+		DE3982411EC7048100581216 /* JDPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDPlayerView.h; sourceTree = "<group>"; };
+		DE3982421EC7048100581216 /* JDPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDPlayerView.m; sourceTree = "<group>"; };
+		DE3982431EC7048100581216 /* JDScrubber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDScrubber.h; sourceTree = "<group>"; };
+		DE3982441EC7048100581216 /* JDScrubber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDScrubber.m; sourceTree = "<group>"; };
+		DE3982451EC7048100581216 /* JDVideoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDVideoModel.h; sourceTree = "<group>"; };
+		DE3982461EC7048100581216 /* JDVideoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDVideoModel.m; sourceTree = "<group>"; };
+		DE3982471EC7048100581216 /* JDVideoPlayLayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDVideoPlayLayerView.h; sourceTree = "<group>"; };
+		DE3982481EC7048100581216 /* JDVideoPlayLayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDVideoPlayLayerView.m; sourceTree = "<group>"; };
+		DE39824F1EC7058100581216 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		DE3982501EC7058100581216 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		DE3982511EC7058100581216 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		DE3982521EC7058100581216 /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		DE3982531EC7058100581216 /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		DE3982541EC7058100581216 /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		DE3982551EC7058100581216 /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		DE3982561EC7058100581216 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		DE3982571EC7058100581216 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		DE3982581EC7058100581216 /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		DE3982591EC7058100581216 /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		DE39825A1EC7058100581216 /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		DE39825B1EC7058100581216 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		DE39825C1EC7058100581216 /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		DE39825D1EC7058100581216 /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		DE39825E1EC7058100581216 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		DE39825F1EC7058100581216 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		DE3982601EC7058100581216 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		DE3982611EC7058100581216 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		DE3982621EC7058100581216 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		DE3982631EC7058100581216 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		DE3982641EC7058100581216 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		DE3982651EC7058100581216 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		DE3982661EC7058100581216 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		DE3982671EC7058100581216 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		DE3982731EC7060A00581216 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		DE3982741EC7060A00581216 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		DE3982761EC7070C00581216 /* VHDPlayMovieVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VHDPlayMovieVC.h; sourceTree = "<group>"; };
+		DE3982771EC7070C00581216 /* VHDPlayMovieVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VHDPlayMovieVC.m; sourceTree = "<group>"; };
 		DECD24541EC3F934007F59E7 /* MovieHDDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieHDDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DECD24581EC3F934007F59E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DECD24731EC3FF68007F59E7 /* NSObject+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extension.h"; sourceTree = "<group>"; };
@@ -181,6 +240,89 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DE3982381EC6F5D700581216 /* ListMovie */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ListMovie;
+			sourceTree = "<group>";
+		};
+		DE3982391EC6F5D700581216 /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				DE39823B1EC6F60800581216 /* VHDMovieDetailVC.h */,
+				DE39823C1EC6F60800581216 /* VHDMovieDetailVC.m */,
+				DE3982761EC7070C00581216 /* VHDPlayMovieVC.h */,
+				DE3982771EC7070C00581216 /* VHDPlayMovieVC.m */,
+			);
+			path = Movie;
+			sourceTree = "<group>";
+		};
+		DE39823A1EC6F5D700581216 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		DE39823E1EC7048100581216 /* JDPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				DE39823F1EC7048100581216 /* JDPlayer.h */,
+				DE3982401EC7048100581216 /* JDPlayer.m */,
+				DE3982411EC7048100581216 /* JDPlayerView.h */,
+				DE3982421EC7048100581216 /* JDPlayerView.m */,
+				DE3982431EC7048100581216 /* JDScrubber.h */,
+				DE3982441EC7048100581216 /* JDScrubber.m */,
+				DE3982451EC7048100581216 /* JDVideoModel.h */,
+				DE3982461EC7048100581216 /* JDVideoModel.m */,
+				DE3982471EC7048100581216 /* JDVideoPlayLayerView.h */,
+				DE3982481EC7048100581216 /* JDVideoPlayLayerView.m */,
+			);
+			path = JDPlayer;
+			sourceTree = "<group>";
+		};
+		DE39824E1EC7058100581216 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				DE39824F1EC7058100581216 /* MASCompositeConstraint.h */,
+				DE3982501EC7058100581216 /* MASCompositeConstraint.m */,
+				DE3982511EC7058100581216 /* MASConstraint+Private.h */,
+				DE3982521EC7058100581216 /* MASConstraint.h */,
+				DE3982531EC7058100581216 /* MASConstraint.m */,
+				DE3982541EC7058100581216 /* MASConstraintMaker.h */,
+				DE3982551EC7058100581216 /* MASConstraintMaker.m */,
+				DE3982561EC7058100581216 /* MASLayoutConstraint.h */,
+				DE3982571EC7058100581216 /* MASLayoutConstraint.m */,
+				DE3982581EC7058100581216 /* Masonry.h */,
+				DE3982591EC7058100581216 /* MASUtilities.h */,
+				DE39825A1EC7058100581216 /* MASViewAttribute.h */,
+				DE39825B1EC7058100581216 /* MASViewAttribute.m */,
+				DE39825C1EC7058100581216 /* MASViewConstraint.h */,
+				DE39825D1EC7058100581216 /* MASViewConstraint.m */,
+				DE39825E1EC7058100581216 /* NSArray+MASAdditions.h */,
+				DE39825F1EC7058100581216 /* NSArray+MASAdditions.m */,
+				DE3982601EC7058100581216 /* NSArray+MASShorthandAdditions.h */,
+				DE3982611EC7058100581216 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				DE3982621EC7058100581216 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				DE3982631EC7058100581216 /* View+MASAdditions.h */,
+				DE3982641EC7058100581216 /* View+MASAdditions.m */,
+				DE3982651EC7058100581216 /* View+MASShorthandAdditions.h */,
+				DE3982661EC7058100581216 /* ViewController+MASAdditions.h */,
+				DE3982671EC7058100581216 /* ViewController+MASAdditions.m */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		DE3982721EC7060A00581216 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				DE3982731EC7060A00581216 /* Reachability.h */,
+				DE3982741EC7060A00581216 /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
 		DECD244B1EC3F934007F59E7 = {
 			isa = PBXGroup;
 			children = (
@@ -224,6 +366,9 @@
 		DECD24711EC3FF68007F59E7 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				DE3982721EC7060A00581216 /* Reachability */,
+				DE39824E1EC7058100581216 /* Masonry */,
+				DE39823E1EC7048100581216 /* JDPlayer */,
 				DECD250E1EC44278007F59E7 /* KIImagePager */,
 				DECD24EB1EC41158007F59E7 /* LGSideMenuController */,
 				DECD24721EC3FF68007F59E7 /* Categories */,
@@ -442,6 +587,9 @@
 		DECD24AF1EC3FF68007F59E7 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				DE3982381EC6F5D700581216 /* ListMovie */,
+				DE3982391EC6F5D700581216 /* Movie */,
+				DE39823A1EC6F5D700581216 /* Search */,
 				DECD25041EC411C5007F59E7 /* Menu */,
 				DECD25011EC411AC007F59E7 /* MainViewController.h */,
 				DECD25021EC411AC007F59E7 /* MainViewController.m */,
@@ -717,10 +865,20 @@
 				DECD24C31EC3FF68007F59E7 /* PPIAPHelper.m in Sources */,
 				DECD24FB1EC41158007F59E7 /* LGSideMenuController.m in Sources */,
 				DECD24C71EC3FF68007F59E7 /* VHDGlobal.m in Sources */,
+				DE39826B1EC7058100581216 /* MASLayoutConstraint.m in Sources */,
+				DE3982681EC7058100581216 /* MASCompositeConstraint.m in Sources */,
+				DE39824A1EC7048100581216 /* JDPlayerView.m in Sources */,
+				DE3982691EC7058100581216 /* MASConstraint.m in Sources */,
+				DE39826C1EC7058100581216 /* MASViewAttribute.m in Sources */,
 				DECD24C81EC3FF68007F59E7 /* VHDLib.m in Sources */,
 				DECD24C01EC3FF68007F59E7 /* UIView+Utils.m in Sources */,
+				DE39826A1EC7058100581216 /* MASConstraintMaker.m in Sources */,
+				DE3982781EC7070C00581216 /* VHDPlayMovieVC.m in Sources */,
 				DECD24C21EC3FF68007F59E7 /* PPFileUtil.m in Sources */,
 				DECD24C51EC3FF68007F59E7 /* PPLocalNotificationHelper.m in Sources */,
+				DE3982751EC7060A00581216 /* Reachability.m in Sources */,
+				DE39824B1EC7048100581216 /* JDScrubber.m in Sources */,
+				DE39826D1EC7058100581216 /* MASViewConstraint.m in Sources */,
 				DECD24BD1EC3FF68007F59E7 /* UILabel+Additions.m in Sources */,
 				DECD24C91EC3FF68007F59E7 /* VHDDataManager.m in Sources */,
 				DECD24FC1EC41158007F59E7 /* LGSideMenuGesturesHandler.m in Sources */,
@@ -731,9 +889,13 @@
 				DECD24FD1EC41158007F59E7 /* LGSideMenuHelper.m in Sources */,
 				DECD24CE1EC3FF68007F59E7 /* VHDBaseVC.m in Sources */,
 				DECD24C61EC3FF68007F59E7 /* PPValidator.m in Sources */,
+				DE39824C1EC7048100581216 /* JDVideoModel.m in Sources */,
 				DECD24BF1EC3FF68007F59E7 /* UIView+Alignment.m in Sources */,
 				DECD25171EC4574C007F59E7 /* VHDMovieByCateModel.m in Sources */,
+				DE3982701EC7058100581216 /* View+MASAdditions.m in Sources */,
+				DE39826E1EC7058100581216 /* NSArray+MASAdditions.m in Sources */,
 				DECD24C41EC3FF68007F59E7 /* PPLocalizationSystem.m in Sources */,
+				DE39824D1EC7048100581216 /* JDVideoPlayLayerView.m in Sources */,
 				DECD24FE1EC41158007F59E7 /* LGSideMenuSegue.m in Sources */,
 				DECD24CF1EC3FF68007F59E7 /* VHDHomeVC.m in Sources */,
 				DECD24FA1EC41158007F59E7 /* LGSideMenuBorderView.m in Sources */,
@@ -741,13 +903,17 @@
 				DECD251A1EC457DD007F59E7 /* VHDMovieModel.m in Sources */,
 				DECD24BC1EC3FF68007F59E7 /* NSObject+Extension.m in Sources */,
 				DECD250A1EC411D4007F59E7 /* LeftViewController.m in Sources */,
+				DE39826F1EC7058100581216 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				DECD24C11EC3FF68007F59E7 /* PPDeviceUtil.m in Sources */,
 				DECD24CC1EC3FF68007F59E7 /* VHDSession.m in Sources */,
 				DECD24DF1EC3FF9E007F59E7 /* main.m in Sources */,
 				DECD25111EC44278007F59E7 /* KIImagePager.m in Sources */,
+				DE3982491EC7048100581216 /* JDPlayer.m in Sources */,
 				DECD24CB1EC3FF68007F59E7 /* VHDResponseObject.m in Sources */,
 				DECD250D1EC41499007F59E7 /* NavigationController.m in Sources */,
+				DE39823D1EC6F60800581216 /* VHDMovieDetailVC.m in Sources */,
 				DECD24FF1EC41158007F59E7 /* LGSideMenuView.m in Sources */,
+				DE3982711EC7058100581216 /* ViewController+MASAdditions.m in Sources */,
 				DECD251F1EC46277007F59E7 /* VHDMovieCell.m in Sources */,
 				DECD25241EC470D5007F59E7 /* VHDHeaderView.m in Sources */,
 				DECD25091EC411D4007F59E7 /* LeftViewCell.m in Sources */,
@@ -875,6 +1041,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 46W25C8KDG;
 				INFOPLIST_FILE = "$(SRCROOT)/MovieHDDemo/App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Tinhvv.MovieHDDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -888,6 +1055,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 46W25C8KDG;
 				INFOPLIST_FILE = "$(SRCROOT)/MovieHDDemo/App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Tinhvv.MovieHDDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -13,10 +13,18 @@
 static NSString * const kPOST                           = @"POST";
 static NSString * const kGET                            = @"GET";
 
+static NSString *const kSign = @"sign=790657bff0963e6e0bf882a763633c7e";
+
 //MARK: - API Path
 static NSString * const kPathRegister                   = @"api/register";
 static NSString * const kPathLogin                      = @"api/auth";
-static NSString * const kPathGetHome = @"movie/homepage?sign=790657bff0963e6e0bf882a763633c7e";
+static NSString * const kPathGetHome = @"movie/homepage?";
+static NSString * const kPathGetListCategory = @"category/menu?key=phim&";
+//static NSString * const kPathGetLinkPlay = @"movie/homepage?";
+//static NSString * const kPathGetMovieForCategory = @"movie/homepage?";
+//static NSString * const kPathSearch = @"movie/homepage?";
+//static NSString * const kPathGetMovieDetail = @"movie/homepage?";
+
 
 // Register
 static NSString * const kUserName                       = @"username";

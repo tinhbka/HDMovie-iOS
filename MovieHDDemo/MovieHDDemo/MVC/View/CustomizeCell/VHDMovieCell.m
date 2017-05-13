@@ -19,6 +19,10 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
+    
+    self.layer.cornerRadius = 3.0;
+    self.clipsToBounds = YES;
+    
     _loadingView = [[UIActivityIndicatorView alloc] init];
     _loadingView.activityIndicatorViewStyle = UIActivityIndicatorViewStyleGray;
     _loadingView.center = _imvCover.center;

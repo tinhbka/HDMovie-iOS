@@ -197,7 +197,33 @@
 }
 
 - (void)getDataForHomeWithCompletion:(VHDResponseBlock)completion{
-    [self callWebserviceWithPath:kPathGetHome method:kGET parameters:nil completion:completion];
+    NSString *params = [NSString stringWithFormat:@"%@%@", kPathGetHome, kSign];
+    [self callWebserviceWithPath:params method:kGET parameters:nil completion:completion];
+}
+
+- (void) getListCategoriesWithCompletion:(VHDResponseBlock) completion{
+    NSString *params = [NSString stringWithFormat:@"%@%@", kPathGetListCategory, kSign];
+    [self callWebserviceWithPath:params method:kGET parameters:nil completion:completion];
+}
+
+- (void) getDetailForMovie:(NSString *)movieID ep:(NSString *)ep completion:(VHDResponseBlock) completion{
+    NSString *params = [NSString stringWithFormat:@"movie?movieid=%@&ep=%@&sequence=0&accesstoken=null&%@", movieID, ep, kSign];
+    [self callWebserviceWithPath:params method:kGET parameters:nil completion:completion];
+}
+
+- (void) getLinkPlayForMovie:(NSString *)movieID ep:(NSString *)ep completion:(VHDResponseBlock) completion{
+    NSString *params = [NSString stringWithFormat:@"movie/play?movieid=%@&ep=%@&sequence=0&accesstoken=null&%@", movieID, ep, kSign];
+    [self callWebserviceWithPath:params method:kGET parameters:nil completion:completion];
+}
+
+- (void) getListMovieForCategory:(NSString *)categoryID offset:(NSString *)offset completion:(VHDResponseBlock) completion{
+    NSString *params = [NSString stringWithFormat:@"movie/?categoryId=%@&key=phim&%@", categoryID, kSign];
+    [self callWebserviceWithPath:params method:kGET parameters:nil completion:completion];
+}
+
+- (void) searchWithKey:(NSString *)key completion:(VHDResponseBlock) completion{
+    NSString *params = [NSString stringWithFormat:@"movie/search/?key=%@&%@", key, kSign];
+    [self callWebserviceWithPath:params method:kGET parameters:nil completion:completion];
 }
 
 @end

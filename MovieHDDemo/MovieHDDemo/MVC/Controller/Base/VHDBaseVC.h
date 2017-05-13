@@ -19,4 +19,6 @@
 - (void) dismissLoading;
 - (void) showLoadingWithMessage:(NSString *)string;
 - (void) showErrorWithStatus:(NSString *)string;
+
+- (void) setImageForImageView:(UIImageView *)imageView url:(NSURL *)url animate:(BOOL)animate;
 @end

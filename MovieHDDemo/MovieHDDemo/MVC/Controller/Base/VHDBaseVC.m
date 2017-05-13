@@ -8,6 +8,7 @@
 
 #import "VHDBaseVC.h"
 #import <SVProgressHUD/SVProgressHUD.h>
+#import "UIImageView+AFNetworking.h"
 @interface VHDBaseVC()
 @property (nonatomic, strong) VHDNetworkManager *networkManager;
 @end
@@ -36,6 +37,35 @@
 
 - (void)dismissLoading{
     [SVProgressHUD dismiss];
+}
+
+#pragma mark Load Image
+- (void)setImageForImageView:(UIImageView *)imageView url:(NSURL *)url animate:(BOOL)animate{
+    UIActivityIndicatorView *_loadingView = [[UIActivityIndicatorView alloc] init];
+    _loadingView.activityIndicatorViewStyle = UIActivityIndicatorViewStyleGray;
+    _loadingView.center = imageView.center;
+    _loadingView.hidesWhenStopped = YES;
+    [imageView addSubview:_loadingView];
+    [_loadingView startAnimating];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    
+    __weak UIImageView *weakImageView = imageView;
+    [imageView setImageWithURLRequest:request placeholderImage:imageView.image success:^(NSURLRequest * _Nonnull request, NSHTTPURLResponse * _Nullable response, UIImage * _Nonnull image) {
+        [_loadingView stopAnimating];
+        if (animate) {
+            [UIView transitionWithView:weakImageView
+                              duration:0.5f
+                               options:UIViewAnimationOptionTransitionCrossDissolve
+                            animations:^{
+                                weakImageView.image = image;
+                            } completion:nil];
+
+        }else{
+            weakImageView.image = image;
+        }
+    } failure:^(NSURLRequest * _Nonnull request, NSHTTPURLResponse * _Nullable response, NSError * _Nonnull error) {
+        [_loadingView stopAnimating];
+    }];
 }
 
 @end
